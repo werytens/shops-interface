@@ -1,4 +1,21 @@
 import { registerTest } from "./modules/registration.js";
+import { renderShops } from "./modules/shopFunctions.js";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const regButton = document.querySelector("#regb");
 const regClose = document.querySelector("#regc");
@@ -6,12 +23,39 @@ const regClose = document.querySelector("#regc");
 const regModal = document.querySelector("#reg_modal");
 const regNave = document.querySelector("#reg");
 
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", async () => {
+    await renderShops();
+})
+
+
+
+
+
+
+
 regNave.addEventListener("click", () => {
     regModal.style.display = "flex";
 })
 regClose.addEventListener("click", () => {
     regModal.style.display = "none";
 })
+
+
+
+
+
+
+
+
+
+
 
 regButton.addEventListener("click", async () => {
     let regData = [document.querySelector(".reg_login").value,
@@ -44,4 +88,4 @@ function clearAllRegInputs() {
     document.querySelectorAll(".reg_input").forEach((item) => {
         item.value = "";
     })
-}
+}   

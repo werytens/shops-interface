@@ -17,8 +17,8 @@
 }
 
 body {
-    background: url("https://cdn.discordapp.com/attachments/867863432798928906/938089984425066556/unknown.png?size=4096");
-    background-size: cover;
+    background: url("https://cdn.discordapp.com/attachments/1103018359429267506/1111745150302044330/20353650.jpg") no-repeat fixed;
+
     color: var(--text-first);
 }
 
@@ -141,4 +141,73 @@ input {
 
 input:hover {
     color: var(--text-first) !important;
+}
+
+
+.shop_modal {
+    top: 0; left: 0;
+
+    position: absolute;
+
+    width: 100%;
+    min-height: 100%;
+
+    z-index: 3;
+
+    background: var(--menus);
+
+    padding: 3vh;
+}
+
+.shop_div {
+    background: var(--submenus);
+
+    margin-bottom: 3vh;
+    padding: 2vh;
+
+    cursor: default;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.shop_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopButton {
+    cursor: pointer;
+}
+
+.shopButton:hover {
+    color: var(--hover-color1);
+}
+
+.shop_item_modal {
+    margin-top: 3vh;
+
+    background: var(--menus);
+    padding: 1vh;
+
+    min-height: 10vh;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.sim_close {
+    position: absolute;
+
+    top: 1vh;
+    right: 1vh;
+
+    cursor: pointer;
+}
+
+.sim_close:hover {
+    color: red;
 }

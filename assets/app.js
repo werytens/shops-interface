@@ -1,11 +1,11 @@
 import abi from "./modules/abi.js";
 
-const contractAddress = "0x285019C98B93263b76ACdc2734Df0F84Eec0d362";
+const contractAddress = "0x27ac91dA72584631dD94c951A504FA73ff9d9AdE";
 
 export let myContract, web3, accounts, currentAccount;
 
 async function getAccounts() {
-  web3 = new Web3(new Web3.providers.HttpProvider("HTTP://127.0.0.1:7545"));
+  web3 = new Web3(new Web3.providers.HttpProvider("HTTP://127.0.0.1:8545"));
   accounts = await web3.eth.getAccounts();
   currentAccount = accounts[0];
 }
