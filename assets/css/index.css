@@ -1,0 +1,141 @@
+:root {
+    --back: #313338;
+    --title: #BAAFFF;
+    --menus: #1E1F22;
+    --submenus: #2D2D2D;
+    --text-first: #CBD6D6;
+    --text-second: #949494;
+    --hover-color1: #9281FF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: url("https://cdn.discordapp.com/attachments/867863432798928906/938089984425066556/unknown.png?size=4096");
+    background-size: cover;
+    color: var(--text-first);
+}
+
+main {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+
+    padding: 2vh;
+
+    width: 60%;
+    min-height: 100%;
+    background: var(--menus);
+}
+
+header {
+    cursor: default;
+
+    position: absolute;
+
+    left: 50%;
+    transform: translate(-50%);
+
+    border-radius: var(--br);
+
+    width: 80%;
+    height: 5%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 15vh;
+
+    background: var(--submenus);
+}
+
+nav {
+    cursor: pointer !important;
+
+    text-transform: uppercase;
+}
+
+header nav:hover {
+    color: var(--hover-color1);
+}
+
+
+#reg_modal {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 1vh;
+
+    z-index: 2;
+
+    width: 30vh;
+    height: 50vh;
+
+    background: var(--submenus);
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reg_title {
+    color: var(--title);
+    text-transform: uppercase;
+    margin-bottom: 3vh;
+}
+
+.reg_inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg_input {
+    margin-bottom: 5vh;
+
+    width: 23vh;
+
+    text-align: center;
+
+
+    background: var(--menus);
+
+    border-radius: var(--br);
+    border: 0;
+
+    padding: 0.5vh;
+}
+
+.reg_input:hover {
+    color: var(--hover-color1);
+}
+
+.reg_buttons button {
+    padding: 0.5vh;
+
+    color: var(--text-first);
+
+    background: var(--menus);
+    border: 0; border-radius: var(--br);
+}
+
+input {
+    color: var(--text-first);
+
+    outline: none;
+}
+
+input:hover {
+    color: var(--text-first) !important;
+}
