@@ -35,8 +35,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 })
 
 
-
-
+document.querySelector("#shops").addEventListener("click", () => {
+    document.querySelector(".shop_modal").style.display = "block";
+})
+document.querySelector(".shop_modal_close").addEventListener("click", () => {
+    document.querySelector(".shop_modal").style.display = "none";
+})
 
 
 

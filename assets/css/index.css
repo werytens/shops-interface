@@ -157,6 +157,24 @@ input:hover {
     background: var(--menus);
 
     padding: 3vh;
+
+    display: none;
+}
+
+.shop_modal_close {
+    position: absolute;
+
+    top: 0; right: 0;
+
+    background: var(--submenus);
+
+    padding: 0.2vh 0.4vh;
+
+    border: 0;
+}
+
+.shop_modal_close:hover {
+    color: red;
 }
 
 .shop_div {
