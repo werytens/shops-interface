@@ -1,11 +1,10 @@
 :root {
-    --back: #313338;
-    --title: #BAAFFF;
-    --menus: #1E1F22;
-    --submenus: #2D2D2D;
-    --text-first: #CBD6D6;
-    --text-second: #949494;
-    --hover-color1: #9281FF;
+    --back: #283055;
+    --menus: #3f6391;
+    --text-one: #d3a593;
+    --text-two: rgb(160, 160, 160);
+
+    --br: 0.3vh;
 }
 
 * {
@@ -17,215 +16,73 @@
 }
 
 body {
-    background: url("https://cdn.discordapp.com/attachments/1103018359429267506/1111745150302044330/20353650.jpg") no-repeat fixed;
-
     color: var(--text-first);
+    background: var(--back);
+    color: var(--text-two);
 }
 
-main {
+.container {
     position: absolute;
+
     left: 50%;
     transform: translate(-50%);
 
-    padding: 2vh;
-
     width: 60%;
-    min-height: 100%;
-    background: var(--menus);
 }
 
 header {
-    cursor: default;
+    margin-top: 2vh;
 
-    position: absolute;
+    width: 100%;
+    height: 4vh;
 
-    left: 50%;
-    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    border-radius: var(--br);
-
-    width: 80%;
-    height: 5%;
+    background: var(--menus);
     
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 0 15vh;
-
-    background: var(--submenus);
-}
-
-nav {
-    cursor: pointer !important;
-
-    text-transform: uppercase;
-}
-
-header nav:hover {
-    color: var(--hover-color1);
-}
-
-
-#reg_modal {
-    position: absolute;
-
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    padding: 1vh;
-
-    z-index: 2;
-
-    width: 35vh;
-    min-height: 60vh;
-
-    background: var(--submenus);
-
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.reg_title {
-    color: var(--title);
-    text-transform: uppercase;
-    margin-bottom: 3vh;
-
-    text-align: center;
-}
-
-.reg_inputs {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.reg_input {
-    margin-bottom: 5vh;
-
-    width: 23vh;
-
-    text-align: center;
-
-
-    background: var(--menus);
 
     border-radius: var(--br);
-    border: 0;
-
-    padding: 0.5vh;
 }
 
-.reg_input:hover {
-    color: var(--hover-color1);
+header a {
+    color: var(--text-two);
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
 }
 
-.reg_buttons button {
-    padding: 0.5vh;
+header a:hover {
+    color: var(--text-one);
 
-    color: var(--text-first);
+    text-shadow: 0.2vh 0.2vh 1vh var(--text-one);
+
+    transition: 0.3s;
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main {
+    margin-top: 3vh;
+
+    border-radius: var(--br);
 
     background: var(--menus);
-    border: 0; border-radius: var(--br);
-}
-
-input {
-    color: var(--text-first);
-
-    outline: none;
-}
-
-input:hover {
-    color: var(--text-first) !important;
-}
-
-
-.shop_modal {
-    top: 0; left: 0;
-
-    position: absolute;
 
     width: 100%;
     min-height: 100%;
 
-    z-index: 3;
 
-    background: var(--menus);
 
-    padding: 3vh;
+    padding: 1.5vh;
+    text-align: justify;
 
-    display: none;
-}
-
-.shop_modal_close {
-    position: absolute;
-
-    top: 0; right: 0;
-
-    background: var(--submenus);
-
-    padding: 0.2vh 0.4vh;
-
-    border: 0;
-}
-
-.shop_modal_close:hover {
-    color: red;
-}
-
-.shop_div {
-    background: var(--submenus);
-
-    margin-bottom: 3vh;
-    padding: 2vh;
-
-    cursor: default;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.shop_info {
-    display: flex;
-    justify-content: space-between;
-}
-
-.shopButton {
-    cursor: pointer;
-}
-
-.shopButton:hover {
-    color: var(--hover-color1);
-}
-
-.shop_item_modal {
-    margin-top: 3vh;
-
-    background: var(--menus);
-    padding: 1vh;
-
-    min-height: 10vh;
-
-    display: none;
-    justify-content: center;
-    align-items: center;
-
-    position: relative;
-}
-
-.sim_close {
-    position: absolute;
-
-    top: 1vh;
-    right: 1vh;
-
-    cursor: pointer;
-}
-
-.sim_close:hover {
-    color: red;
+    user-select: none;
 }
